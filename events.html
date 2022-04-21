@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="customStyle.css">
+    <title>´Bows Cafe</title>
+  </head>
+  <body>
+    <header>
+  <!--Navbar start-->
+    <nav class="navbar navbar-expand-md sticky-md-top">
+        <div class="container-fluid">
+            <a class="navbar-brand ps-2" href="index.html" aria-current="page">'Bows Cafe</a>
+            <button class="navbar-toggler  navbar-light" type="button" data-bs-toggle="collapse" data-bs-target="#navigatonBar" aria-controls="navigatonBar" aria-expanded="false" aria-label="Navigation Bar">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-md-end text-center pb-2" id="navigatonBar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                <a class="nav-link" href="about.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="bookarrivals.html">New Arrivals</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="menu.html">Menucard</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link active" href="#">Events</a>
+                </li>
+                <li class="nav-item pe-md-2">
+                <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+            </ul>
+            </div>
+        </div>
+      </nav>
+</header>
+
+<main class="customContainer d-flex flex-column justify-content-center align-items-center p-3 text-center">
+    <h2 class="text-center p-3">Events</h2>
+    <div class="row container-fluid">
+        <div class="col col-md-8 col-lg-6 d-flex flex-column justify-content-center align-items-center">
+            <h3 class="text-center pb-2">Upcoming Events</h3>
+                <div class="card mb-3"> <!--One card-->
+                    <div class="row">
+                        <div class="col-md-4 d-flex justify-content-center align-items-center">
+                            <img src="img/events/pexels-kuldeep-lagdhir-7471612.jpg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8 pe--md-5 text-center">
+                            <div class="card-body">
+                                <h5 class="card-title">Poker Night</h5>
+                                <p class="card-text">2022.April.20.</p>
+                                <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#pokerNight">Read More</button>
+                            </div>
+                        </div> 
+                    </div>
+                </div><!--One card end-->
+                <!--One cards modal-->
+                <div class="modal fade" id="pokerNight" tabindex="-1" aria-labelledby="pokerNight" aria-hidden="true">
+                <div class="modal-dialog modal-sm">
+                    <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="pokerNight">Poker Night</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p> Before the tournament starts, we go through the rules between 17.30-18.00. Evening is gonna be managed by Nilesine Nielsen. The bets are in fantasy chips and a trophy can be won. Max. 30 person can participate, so register now. </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-secondary"><a href="#">Register</a></button>
+                    </div>
+                    </div>
+                </div>
+                </div>  <!--One cards modal end-->
+                 <div class="card mb-3"><!--One card-->
+                    <div class="row">
+                        <div class="col-md-4 d-flex justify-content-center align-items-center">
+                        <img src="img/events/pexels-lukas-hartmann-1557652.jpg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8 pe-5">
+                        <div class="card-body">
+                            <h5 class="card-title">Familytree</h5>
+                            <p class="card-text">2022.April.23.</p>
+                             <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#familyTree">Read More</button>
+                        </div>
+                        </div>
+                    </div>
+                </div> <!--One card-->
+                <!--One cards modal-->
+                <div class="modal fade" id="familyTree" tabindex="-1" aria-labelledby="familyTree" aria-hidden="true">
+                <div class="modal-dialog modal-sm">
+                    <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="familyTree">Familytree</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Come and meet the with Cecilie og Karoline, the publishers of AlleNorm. They have their fantastic familytree drawing material. Therefore the youngest member of your family can learn and have fun to fill up the familytree. </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-secondary"><a href="#">Register</a></button>
+                    </div>
+                    </div>
+                </div>
+                </div>  <!--One cards modal end-->
+                <div class="card mb-3"> <!--One card-->
+                    <div class="row">
+                        <div class="col-md-4 d-flex justify-content-center align-items-center">
+                        <img src="img/events/pexels-cottonbro-4691586.jpg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Board Game Night</h5>
+                            <p class="card-text">2022.May.04.</p>
+                            <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#boardGameNight">Read More</button>
+                        </div>
+                        </div>
+                    </div>
+                </div><!--One card end-->
+                <!--One cards modal-->
+                <div class="modal fade" id="boardGameNight" tabindex="-1" aria-labelledby="boardGameNight" aria-hidden="true">
+                <div class="modal-dialog modal-sm">
+                    <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="boardGameNight">Board Game Night</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Meet with new and old friends while you play. Take your favorite board game with you to the Cafe and see who will join.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-secondary"><a href="#">Register</a></button>
+                    </div>
+                    </div>
+                </div>
+                </div>  <!--One cards modal end-->
+                <div class="card mb-3"> <!--One card-->
+                    <div class="row">
+                        <div class="col-md-4 d-flex justify-content-center align-items-center">
+                        <img src="img/events/pexels-cottonbro-4722544.jpg" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Drag Race Quiz</h5>
+                            <p class="card-text">2022.May.25.</p>
+                            <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#dragRace">Read More</button>
+                        </div>
+                        </div>
+                    </div>
+                </div><!--One card end-->
+                <!--One cards modal-->
+                <div class="modal fade" id="dragRace" tabindex="-1" aria-labelledby="dragRace" aria-hidden="true">
+                <div class="modal-dialog modal-sm">
+                    <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="dragRace">Board Game Night</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Let the best Drag Race Nerd win. Have you seen more Rupaul's Drag Race episodes than you should? Come and play in teams in this pub-quiz style race.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-secondary"><a href="#">Register</a></button>
+                    </div>
+                    </div>
+                </div>
+                </div>  <!--One cards modal end-->
+        </div> <!--Upcoming events grid - first 8 coloumn-->
+        <div class="col-lg-2 d-none d-lg-block"></div> <!--Empty space on large screen-->
+        <div class="col-md-4 d-none d-md-block">
+            <h3 class="text-center pb-2">Past Events</h3>
+            <div class="card  mb-3"> <!--One card -->
+            <div class="card-body">
+                <h5 class="card-title"> <abbr title="Bondage, Dominance, Sadism, Masochism">BDSM</abbr> Infonight</h5>
+                <h6 class="card-subtitle fst-italic mb-2">For over 18 y.o.</h6>
+                <p class="card-text">If you are interested in BDSM or you identify yourselves as a queer, come and hear more.</p>
+            </div>
+            </div>
+            <div class="card  mb-3"> <!--One card -->
+            <div class="card-body">
+                <h5 class="card-title">Meet <abbr title="Union for support Transgender Children">FSTB</abbr></h5>
+                <p class="card-text">Are you parent or relative of a transgender child or teenager? Or are you just curious to learn more? Come and hear more about this topic.</p>
+            </div>
+            </div>
+            <div class="card  mb-3"> <!--One card -->
+            <div class="card-body">
+                <h5 class="card-title">5 erotic languages - lecture</h5>
+                <h6 class="card-subtitle fst-italic mb-2">For over 18 y.o.</h6>
+                <p class="card-text">You may yourselves well, but do you know your erotic languages? Come and find out.</p>
+            </div>
+            </div>
+        </div>
+    </div>
+  
+</main>
+
+<footer class="d-md-flex text-center pb-2">
+  <div class="container pt-4">
+    <p>'Bow Cafe is locally owned bookstore and cafe in Aalborg specialized on distribution of new and used LGBT+ literature</p>
+  </div>
+  <div class="container pt-md-4 d-lg-flex justify-content-end me-lg-5">
+    <p class="m-0 pe-lg-3">Follow us</p>
+    <a href="https://www.facebook.com/Buensbogcafe" target="_blank"  role="img" aria-label="Our Facebook link"><i class="bi-facebook"></i></a>
+    <a href="https://www.instagram.com/buensbogcafe/" target="_blank"  role="img" aria-label="Our Instagram link"><i class="bi-instagram"></i></a>
+    <a href="https://www.tiktok.com/@buensbogcafe?" target="_blank"  role="img" aria-label="Our TikTok link"><i class="bi-tiktok"></i></a>
+    <a href="https://www.linkedin.com/company/buens-bogcaf%C3%A9/" target="_blank" role="img" aria-label="Our Twitter link"><i class="bi-linkedin"></i></a>
+  </div>
+</footer>
+
+<div id="toTop">
+    <a href="#" role="button" aria-label="To top of the page"><i class="bi bi-arrow-up-square-fill"></i></a>
+</div>
+    <!-- Optional JavaScript-->
+
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>

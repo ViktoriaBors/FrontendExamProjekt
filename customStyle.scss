@@ -1,0 +1,438 @@
+/*Imported urls*/
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+
+$bgColor-1: rgb(211, 222, 220);
+$bgColor-2:rgb(146, 169, 189);
+$bgColor-3:rgb(124, 153, 172);
+$bgColor-4: rgb(255, 239, 239);
+$bgColor-5:rgb(169, 184, 199);
+
+$navColor: rgb(1, 71, 45);
+$textColor: rgb(0, 53, 33);
+$textColor2: rgb(0, 26, 16);
+
+*{
+    font-family: 'Roboto Condensed',sans-serif;
+    box-sizing: border-box;
+}
+
+#toTop{
+    position: fixed;
+    bottom: 5px;
+    right:5px;
+    z-index: 1;
+    a{
+        color: black;
+    }
+    i{
+        font-size: larger;
+    }
+}
+
+#modalCookies{
+    display: none;
+    justify-content: center;
+    align-items: flex-start;
+    padding:1rem; 
+    height: 20vh;
+    width: 100vw;
+    background-color: rgba(0,0,0,.8);
+    color: white;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index:1;
+    text-align: center;
+    @media screen and (min-width:768px) {
+        width: 30vw;    
+        height: 15vh;  
+    }
+}
+
+
+/*header navbar and carousel*/
+header{
+    background-color: $bgColor-1;
+}
+.navbar{
+    background-color: $bgColor-1;
+    .navbar-brand{
+        font-family: "Monoton", cursive;
+        background-image: linear-gradient(to left, violet, indigo, blue, green, orange, red);
+        background-clip:text;
+        -webkit-background-clip: text;
+        color: transparent;
+        letter-spacing: 5px;
+        font-size: 2rem;
+    }
+    .navbar-brand:hover{
+        color: $navColor;
+    }
+    
+    .nav-item{
+        font-size: 1.2rem;
+        .active{
+            font-weight: bolder;
+        }
+        .nav-link {
+            color: $navColor;
+        }    
+        &:hover {
+            color: black;
+            font-weight: bolder;
+            text-decoration: underline;
+        }
+    }
+}
+
+.carousel {
+    position: relative;
+    img {
+        width: 100%;
+        border-radius: 5px;
+        @media only screen and (min-width:768px) {            
+                width: 75%;            
+        }
+    }
+    .carousel-caption{
+        background-color: rgba(0, 0, 0, 0.8);
+        color: white;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        font-size: smaller;      
+            @media only screen and (min-width:768px) {
+                    bottom: 0;
+                    left: 50%;
+                    right: 5%;
+                    border-radius: 5px;
+                    font-size: larger;
+            }
+    }
+    @media only screen and (min-width:768px) {
+        .carousel-control-prev,
+        .carousel-control-next {
+            position: absolute;
+            bottom: 5px;
+            right: 0;
+            justify-content: end;
+            align-items: end;
+            text-align: end;
+            width: 5%;
+            margin-left: 90%;
+            }
+        }    
+    }
+/*index2
+.carouselCaption{
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 2rem;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    position: absolute;
+    bottom:0;
+    left: 10%;
+    right: 15%;
+    z-index: 1;
+    display: none;
+}
+.activeText {
+    display: block;
+}*/
+
+/*main index.html*/
+main{
+    background-color: $bgColor-2;
+    color: $textColor;
+}
+
+/*footer all*/
+footer{
+    background-color: $bgColor-3;
+    color: $textColor2;
+    a{
+        padding: 0 0.5rem;
+        color: $textColor2;
+      &:hover{
+         color: black;
+        }
+    }
+    i:hover{
+        padding: 3px;
+        border: 1px solid $navColor;
+    }
+}
+
+/*Impresszium all*/
+.impresszium{
+    background-color: $bgColor-4;
+    font-size: smaller;
+    line-height: 2px;
+    a{
+        color: black;
+    }
+    button{
+        border: none;
+        text-decoration: underline;
+    }
+    .modal {
+        .modal-content{
+            background: linear-gradient(to bottom, rgb(214, 214, 214), rgb(165, 163, 163));
+        }
+        .modal-body{
+            p{
+                line-height: normal;
+                margin-bottom: .3rem;
+            }
+        }    
+    }
+}
+
+/*index.html - parallax effect*/
+.parallax {
+    background-image: url(img/cafe.png);
+    min-height: 200px;
+    background-attachment: fixed;
+    background-position: 60% 20%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    text-shadow: 2px 3px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+/*about.html - main*/
+main{
+    .container{
+        background-color: $bgColor-5 ;
+        border: 3px solid rgb(146, 155, 156);
+        text-align: justify;
+      .container-fluid{
+          figure{
+              text-align: center;
+            img {
+                width: 70%;
+                border-radius: 5px;
+            }
+          }
+      }
+    }
+}
+
+.customContainer {
+    @media screen and (min-width:768px) {
+        height: 100vh;
+    }
+}
+
+/*New arrivals - custom grid*/
+.customGridOne,.customGridTwo{
+    @media screen and (min-width:576px) {
+        display: grid;
+        grid-gap: .8rem;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    @media screen and (min-width: 1200px) {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; 
+    }
+    img{
+        width: 100%;
+        height: auto;
+        @media screen and (min-width:576px) {
+            height: 300px;
+            
+        }
+    }
+    .book{
+        position: relative;
+        justify-self: center;
+        align-self: center;
+    }
+    .bookTitle{
+        font-size: 1rem;
+        text-transform: uppercase;
+        text-align: center;
+        letter-spacing: -1px;
+        
+    }
+    .textHidden{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(beige, 0.9);
+            padding: 1rem;
+            color: $textColor2;
+            text-align: justify;
+            opacity: 0;
+            transition: 0.3s ease-in-out;
+            cursor: pointer;
+            @media screen and (min-width:576px) {
+                height: 300px;
+                
+            }
+    }
+    .textHidden.display{
+        opacity: 1;
+    }
+}
+
+/*Pagination*/
+#pagination{
+    button{
+        background-color: $navColor;
+        border: 1px solid white;
+        border-radius: 5px;
+        margin: 5px;
+        font-size: larger;
+        &:hover{
+            background-color: $textColor2;
+        }
+        a{
+            color: white;
+            text-decoration: none;
+            width: 100%;
+        }
+    }
+}
+
+.customGridTwo{
+    display: none;
+}
+
+.showPage{
+    display: grid;
+}
+
+.hidePage{
+    display: none;
+}
+
+
+/*Menucard flip effect*/
+
+.cardDrinks, .cardSnacks{
+    width: 100vw;
+    height: 720px;
+    perspective: none;
+    border: 5px solid transparent;
+    border-image: linear-gradient(to bottom right, violet 0%, indigo 15%, blue 40%, green 65%, orange 85%, red 100%);
+    border-image-slice: 1;
+}
+.cardMenuDrinks, .cardMenuSnacks{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        transition: transform 1s;
+        transform-style: preserve-3d;   
+        cursor: pointer;    
+        .cardFront, .cardBack{
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            backface-visibility: hidden;
+                h3 {
+                    font-size: 4rem;
+                    text-shadow:  1px 1px black;
+                    font-family: "Monoton", cursive;
+                }
+        }
+        .cardBack{
+            background:linear-gradient(45deg, rgb(170, 154, 180),rgb(202, 184, 214));
+            transform: rotateY(180deg);
+            h4{
+                text-decoration: underline;
+            }
+            .col{
+                border-bottom: 1px dashed $textColor;
+                margin:0;
+                padding-top: 10px;
+            }
+        }      
+}
+.cardMenuDrinks.is-flipped, .cardMenuSnacks.is-flipped {
+    transform: rotateY(180deg);
+}
+.cardMenuDrinks .cardFront {
+    background-image: url(img/pexels-chevanon-photography-302904.jpg);
+    background-size: cover;
+    background-position: 50% 70%;
+}
+.cardMenuSnacks .cardFront {
+    background-image: url(img/pexels-valeria-boltneva-1200354.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+
+/*Events styles*/
+.card{
+    border: 1px white solid;
+    color: white;
+}
+.col-md-8 .card{
+    background-color: rgba(0, 53, 33, .5);
+    img{
+        border:1px solid white;
+        border-radius: 5px;
+    }
+}
+
+.modal{
+    .modal-content {
+        background: linear-gradient(to bottom, rgb(255, 255, 255) 60%, rgb(146, 169, 189));
+        text-align: justify;
+    }
+    .btn{
+        border: 1px solid black;
+        &:hover{
+            background-color: $bgColor-2;
+        }
+        a{
+            color: white;
+            text-decoration: none;
+        }
+    }
+}
+.col-md-4 .card{
+    background-color: rgba(0, 53, 33,.2);
+    color: $textColor2;
+}
+
+
+/*contact html*/
+main .section{
+    background-color: $bgColor-3;
+    color: $textColor2;
+    .containerMap{
+        position: relative;
+        overflow: hidden;
+        width: 80%;
+        padding-top: 80%;
+        left: 10%;
+        @media screen and (min-width:768px) {
+            width: 30%;
+            padding-top:30%;            
+        }
+    }
+    .map{
+        position: absolute;
+        top:0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+    }
+}

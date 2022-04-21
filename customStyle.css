@@ -1,0 +1,515 @@
+/*Imported urls*/
+@import url("https://fonts.googleapis.com/css2?family=Monoton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+* {
+  font-family: 'Roboto Condensed',sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#toTop {
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+  z-index: 1;
+}
+
+#toTop a {
+  color: black;
+}
+
+#toTop i {
+  font-size: larger;
+}
+
+#modalCookies {
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 1rem;
+  height: 20vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  #modalCookies {
+    width: 30vw;
+    height: 15vh;
+  }
+}
+
+/*header navbar and carousel*/
+header {
+  background-color: #d3dedc;
+}
+
+.navbar {
+  background-color: #d3dedc;
+}
+
+.navbar .navbar-brand {
+  font-family: "Monoton", cursive;
+  background-image: -webkit-gradient(linear, right top, left top, from(violet), color-stop(indigo), color-stop(blue), color-stop(green), color-stop(orange), to(red));
+  background-image: linear-gradient(to left, violet, indigo, blue, green, orange, red);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: 5px;
+  font-size: 2rem;
+}
+
+.navbar .navbar-brand:hover {
+  color: #01472d;
+}
+
+.navbar .nav-item {
+  font-size: 1.2rem;
+}
+
+.navbar .nav-item .active {
+  font-weight: bolder;
+}
+
+.navbar .nav-item .nav-link {
+  color: #01472d;
+}
+
+.navbar .nav-item:hover {
+  color: black;
+  font-weight: bolder;
+  text-decoration: underline;
+}
+
+.carousel {
+  position: relative;
+}
+
+.carousel img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+@media only screen and (min-width: 768px) {
+  .carousel img {
+    width: 75%;
+  }
+}
+
+.carousel .carousel-caption {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  font-size: smaller;
+}
+
+@media only screen and (min-width: 768px) {
+  .carousel .carousel-caption {
+    bottom: 0;
+    left: 50%;
+    right: 5%;
+    border-radius: 5px;
+    font-size: larger;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .carousel .carousel-control-prev,
+  .carousel .carousel-control-next {
+    position: absolute;
+    bottom: 5px;
+    right: 0;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: end;
+    text-align: end;
+    width: 5%;
+    margin-left: 90%;
+  }
+}
+
+/*index2
+.carouselCaption{
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 2rem;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    position: absolute;
+    bottom:0;
+    left: 10%;
+    right: 15%;
+    z-index: 1;
+    display: none;
+}
+.activeText {
+    display: block;
+}*/
+/*main index.html*/
+main {
+  background-color: #92a9bd;
+  color: #003521;
+}
+
+/*footer all*/
+footer {
+  background-color: #7c99ac;
+  color: #001a10;
+}
+
+footer a {
+  padding: 0 0.5rem;
+  color: #001a10;
+}
+
+footer a:hover {
+  color: black;
+}
+
+footer i:hover {
+  padding: 3px;
+  border: 1px solid #01472d;
+}
+
+/*Impresszium all*/
+.impresszium {
+  background-color: #ffefef;
+  font-size: smaller;
+  line-height: 2px;
+}
+
+.impresszium a {
+  color: black;
+}
+
+.impresszium button {
+  border: none;
+  text-decoration: underline;
+}
+
+.impresszium .modal .modal-content {
+  background: -webkit-gradient(linear, left top, left bottom, from(#d6d6d6), to(#a5a3a3));
+  background: linear-gradient(to bottom, #d6d6d6, #a5a3a3);
+}
+
+.impresszium .modal .modal-body p {
+  line-height: normal;
+  margin-bottom: .3rem;
+}
+
+/*index.html - parallax effect*/
+.parallax {
+  background-image: url(img/cafe.png);
+  min-height: 200px;
+  background-attachment: fixed;
+  background-position: 60% 20%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  text-shadow: 2px 3px black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 5px;
+}
+
+/*about.html - main*/
+main .container {
+  background-color: #a9b8c7;
+  border: 3px solid #929b9c;
+  text-align: justify;
+}
+
+main .container .container-fluid figure {
+  text-align: center;
+}
+
+main .container .container-fluid figure img {
+  width: 70%;
+  border-radius: 5px;
+}
+
+@media screen and (min-width: 768px) {
+  .customContainer {
+    height: 100vh;
+  }
+}
+
+/*New arrivals - custom grid*/
+@media screen and (min-width: 576px) {
+  .customGridOne, .customGridTwo {
+    display: -ms-grid;
+    display: grid;
+    grid-gap: .8rem;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .customGridOne, .customGridTwo {
+    -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+}
+
+.customGridOne img, .customGridTwo img {
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (min-width: 576px) {
+  .customGridOne img, .customGridTwo img {
+    height: 300px;
+  }
+}
+
+.customGridOne .book, .customGridTwo .book {
+  position: relative;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.customGridOne .bookTitle, .customGridTwo .bookTitle {
+  font-size: 1rem;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: -1px;
+}
+
+.customGridOne .textHidden, .customGridTwo .textHidden {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(245, 245, 220, 0.9);
+  padding: 1rem;
+  color: #001a10;
+  text-align: justify;
+  opacity: 0;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 576px) {
+  .customGridOne .textHidden, .customGridTwo .textHidden {
+    height: 300px;
+  }
+}
+
+.customGridOne .textHidden.display, .customGridTwo .textHidden.display {
+  opacity: 1;
+}
+
+/*Pagination*/
+#pagination button {
+  background-color: #01472d;
+  border: 1px solid white;
+  border-radius: 5px;
+  margin: 5px;
+  font-size: larger;
+}
+
+#pagination button:hover {
+  background-color: #001a10;
+}
+
+#pagination button a {
+  color: white;
+  text-decoration: none;
+  width: 100%;
+}
+
+.customGridTwo {
+  display: none;
+}
+
+.showPage {
+  display: -ms-grid;
+  display: grid;
+}
+
+.hidePage {
+  display: none;
+}
+
+/*Menucard flip effect*/
+.cardDrinks, .cardSnacks {
+  width: 100vw;
+  height: 720px;
+  -webkit-perspective: none;
+          perspective: none;
+  border: 5px solid transparent;
+  -o-border-image: linear-gradient(to bottom right, violet 0%, indigo 15%, blue 40%, green 65%, orange 85%, red 100%);
+     border-image: -webkit-gradient(linear, left top, right bottom, from(violet), color-stop(15%, indigo), color-stop(40%, blue), color-stop(65%, green), color-stop(85%, orange), to(red));
+     border-image: linear-gradient(to bottom right, violet 0%, indigo 15%, blue 40%, green 65%, orange 85%, red 100%);
+  border-image-slice: 1;
+}
+
+.cardMenuDrinks, .cardMenuSnacks {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  cursor: pointer;
+}
+
+.cardMenuDrinks .cardFront, .cardMenuDrinks .cardBack, .cardMenuSnacks .cardFront, .cardMenuSnacks .cardBack {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.cardMenuDrinks .cardFront h3, .cardMenuDrinks .cardBack h3, .cardMenuSnacks .cardFront h3, .cardMenuSnacks .cardBack h3 {
+  font-size: 4rem;
+  text-shadow: 1px 1px black;
+  font-family: "Monoton", cursive;
+}
+
+.cardMenuDrinks .cardBack, .cardMenuSnacks .cardBack {
+  background: linear-gradient(45deg, #aa9ab4, #cab8d6);
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.cardMenuDrinks .cardBack h4, .cardMenuSnacks .cardBack h4 {
+  text-decoration: underline;
+}
+
+.cardMenuDrinks .cardBack .col, .cardMenuSnacks .cardBack .col {
+  border-bottom: 1px dashed #003521;
+  margin: 0;
+  padding-top: 10px;
+}
+
+.cardMenuDrinks.is-flipped, .cardMenuSnacks.is-flipped {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.cardMenuDrinks .cardFront {
+  background-image: url(img/pexels-chevanon-photography-302904.jpg);
+  background-size: cover;
+  background-position: 50% 70%;
+}
+
+.cardMenuSnacks .cardFront {
+  background-image: url(img/pexels-valeria-boltneva-1200354.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+/*Events styles*/
+.card {
+  border: 1px white solid;
+  color: white;
+}
+
+.col-md-8 .card {
+  background-color: rgba(0, 53, 33, 0.5);
+}
+
+.col-md-8 .card img {
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+.modal .modal-content {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(60%, white), to(#92a9bd));
+  background: linear-gradient(to bottom, white 60%, #92a9bd);
+  text-align: justify;
+}
+
+.modal .btn {
+  border: 1px solid black;
+}
+
+.modal .btn:hover {
+  background-color: #92a9bd;
+}
+
+.modal .btn a {
+  color: white;
+  text-decoration: none;
+}
+
+.col-md-4 .card {
+  background-color: rgba(0, 53, 33, 0.2);
+  color: #001a10;
+}
+
+/*contact html*/
+main .section {
+  background-color: #7c99ac;
+  color: #001a10;
+}
+
+main .section .containerMap {
+  position: relative;
+  overflow: hidden;
+  width: 80%;
+  padding-top: 80%;
+  left: 10%;
+}
+
+@media screen and (min-width: 768px) {
+  main .section .containerMap {
+    width: 30%;
+    padding-top: 30%;
+  }
+}
+
+main .section .map {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+/*# sourceMappingURL=customStyle.css.map */
