@@ -1,14 +1,7 @@
 let cardDrinks = document.querySelector('.cardMenuDrinks');
 let cardSnacks = document.querySelector('.cardMenuSnacks');
 
-cardDrinks.addEventListener('click', function () {
-    cardDrinks.classList.toggle('is-flipped');
-});
-
-cardSnacks.addEventListener('click', function () {
-    cardSnacks.classList.toggle('is-flipped');
-});
-
+//using focus instead of click - make sure that can be rached with keyboard
 cardDrinks.addEventListener('focus', function () {
     cardDrinks.classList.toggle('is-flipped');
 });

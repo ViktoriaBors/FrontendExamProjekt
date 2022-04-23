@@ -2,23 +2,8 @@ let textOnBook = document.querySelectorAll(".textHidden");
 let prevBook
 
 //select textHidden paragraph in an array
-
-for (let i = 0; i < textOnBook.length; i++) {
-    textOnBook[i].addEventListener("click", function () {
-        if (this.classList.contains("display")) {
-            this.classList.remove("display")
-        }
-        else {
-            if (prevBook != null)
-                prevBook.classList.remove("display");
-            prevBook = this;
-            this.classList.add("display");
-        }
-    })
-}
-
 //if the hidden text has already  has a display remove it. Otherwise take the other book if it has a class then remove it otherwise added
-
+// using focus instead of click - make sure to use for keyboard and mouse
 for (let i = 0; i < textOnBook.length; i++) {
     textOnBook[i].addEventListener("focus", function () {
         if (this.classList.contains("display")) {
@@ -33,7 +18,6 @@ for (let i = 0; i < textOnBook.length; i++) {
     })
 }
 
-//same put everythin using keyboard.
 
 
 
