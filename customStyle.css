@@ -561,4 +561,77 @@ form p {
     padding: .8rem 5rem;
   }
 }
+
+/*rainbow Game*/
+.rainbowGame {
+  height: 220px;
+  width: 100%;
+  position: relative;
+  left: 0;
+  overflow: hidden;
+  padding-bottom: 15px;
+}
+
+.rainbowGame #start {
+  position: relative;
+  left: 0;
+  right: 0;
+  top: 1rem;
+}
+
+.rainbowGame .half {
+  position: relative;
+  border: 1px solid black;
+  top: 20px;
+  left: 20px;
+  border-radius: 275px 275px 0 0;
+  border-bottom: 0;
+}
+
+.rainbowGame .game {
+  text-align: center;
+  font-weight: bolder;
+  cursor: pointer;
+  padding-top: 1rem;
+}
+
+.rainbowGame .circle-1 {
+  height: 180px;
+  width: 360px;
+}
+
+.rainbowGame .circle-2 {
+  height: 160px;
+  width: 320px;
+}
+
+.rainbowGame .circle-3 {
+  height: 140px;
+  width: 280px;
+}
+
+.rainbowGame .circle-4 {
+  height: 120px;
+  width: 240px;
+}
+
+.rainbowGame .circle-5 {
+  height: 100px;
+  width: 200px;
+}
+
+.rainbowGame .circle-6 {
+  height: 80px;
+  width: 160px;
+}
+
+.rainbowGame .circle-7 {
+  height: 60px;
+  width: 120px;
+}
+
+.rainbowGame .circle-8 {
+  height: 40px;
+  width: 80px;
+}
 /*# sourceMappingURL=customStyle.css.map */

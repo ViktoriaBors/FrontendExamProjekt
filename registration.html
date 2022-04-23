@@ -42,10 +42,9 @@
       </nav>
 </header>
 
-<main class="d-flex flex-column justify-content-center align-items-center p-3 text-center customContainer">
+<main class="d-flex flex-column justify-content-center align-items-center p-3 text-center">
   <h2 class="pb-2">Registration form for our Events</h2>
   <section class="container mx-5 my-2 p-3 p-sm-5">
-
   <!--  FORM Data goes to trailhead account-->
   <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" id="eventForm">
   
@@ -99,15 +98,34 @@
   
   <div>
       <p>PLEASE NOTE! All data is going to be send to (creator of the page's) Salesforce Trailhead account. It is an online, free customer relationship management learning platform.</p>
+      <p>Please NOTE! After submition of the form, you are going to be redirected to ProOktatas homepage.</p>
   </div>
-
   </form>
   </section> 
-
-
-
+  <section class="container" aria-hidden="true">
+    <h4 class="text-center pt-3">Get a Rainbow</h4>
+    <div class="rainbowGame d-flex flex-column justify-content-start align-items-center">
+      <div class=" half circle-1" id="start">
+        <div class=" half circle-2">
+          <div class="half circle-3">
+            <div class="half circle-4">
+              <div class="half circle-5">
+                <div class="half circle-6">
+                  <div class="half circle-7">
+                    <div class="half circle-8 game"> <p>Click Here</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 </main>
-
+  
+  
 <footer class="d-md-flex text-center pb-2">
   <div class="container pt-4">
     <p>'Bow Cafe is locally owned bookstore and cafe in Aalborg specialized on distribution of new and used LGBT+ literature</p>
@@ -125,16 +143,7 @@
     <a href="#" role="button" aria-label="To top of the page"><i class="bi bi-arrow-up-square-fill"></i></a>
 </div>
     <!-- Optional JavaScript-->
-    <script>
-      let resetButton = document.getElementById("reset")
-      resetButton.addEventListener("click", function(){
-        document.getElementById("eventForm").reset();
-      })
-      let submitButton = document.getElementById("submit")
-      submitButton.addEventListener("click", function(){
-        alert("Thank you for your submission. Now you are going to be redirected to ProOktatas homepage.")
-      })
-    </script>
+<script src="registration.js"></script>
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>

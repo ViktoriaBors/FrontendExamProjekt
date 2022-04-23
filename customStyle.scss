@@ -476,3 +476,44 @@ form{
         }
     }
 }
+
+/*rainbow Game*/
+
+.rainbowGame{
+    height: 220px;
+    width: 100%;
+    position: relative;
+    left: 0;
+    overflow: hidden;
+    padding-bottom: 15px;
+    #start{
+        position: relative;
+        left: 0;
+        right: 0;
+        top: 1rem;
+    }
+    .half{
+        position: relative;
+        border: 1px solid black;
+        top:20px;
+        left: 20px;
+        border-radius: 275px 275px 0 0 ;
+        border-bottom: 0;
+    }
+    .game{
+        text-align: center;
+        font-weight: bolder;
+        cursor: pointer;
+        padding-top: 1rem;
+        
+    }
+}
+
+$heightStep:20px;
+$widthStep:40px;
+@for $i from 1 to 9 {
+    .rainbowGame .circle-#{$i}{
+        height: (200px-($heightStep*$i));
+        width: (400px-($widthStep*$i))
+    }
+}
