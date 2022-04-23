@@ -86,8 +86,11 @@ header {
   color: #01472d;
 }
 
+.navbar .nav-item .dropdown-menu {
+  background-color: #d3dedc;
+}
+
 .navbar .nav-item:hover {
-  color: black;
   font-weight: bolder;
   text-decoration: underline;
 }
@@ -192,7 +195,7 @@ footer i:hover {
 .impresszium {
   background-color: #ffefef;
   font-size: smaller;
-  line-height: 2px;
+  line-height: 10px;
 }
 
 .impresszium a {
@@ -202,6 +205,7 @@ footer i:hover {
 .impresszium button {
   border: none;
   text-decoration: underline;
+  background-color: transparent;
 }
 
 .impresszium .modal .modal-content {
@@ -243,6 +247,12 @@ main .container {
   text-align: justify;
 }
 
+@media screen and (min-width: 992px) {
+  main .container {
+    max-width: 980px;
+  }
+}
+
 main .container .container-fluid figure {
   text-align: center;
 }
@@ -250,6 +260,12 @@ main .container .container-fluid figure {
 main .container .container-fluid figure img {
   width: 70%;
   border-radius: 5px;
+}
+
+@media screen and (min-width: 768px) {
+  main .container .customLine {
+    border-left: 3px solid #929b9c;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -511,5 +527,38 @@ main .section .map {
   right: 0;
   width: 100%;
   height: 100%;
+}
+
+/*registration*/
+form div {
+  padding: .8rem;
+}
+
+form div label {
+  font-weight: bolder;
+}
+
+form div input, form div select, form div textarea {
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: #ffefef;
+}
+
+form div #reset:hover {
+  background-color: lightgray;
+}
+
+form div .required {
+  color: darkred;
+}
+
+form p {
+  font-size: smaller;
+}
+
+@media screen and (min-width: 768px) {
+  form div {
+    padding: .8rem 5rem;
+  }
 }
 /*# sourceMappingURL=customStyle.css.map */

@@ -76,11 +76,13 @@ header{
         .active{
             font-weight: bolder;
         }
-        .nav-link {
+        .nav-link{
             color: $navColor;
         }    
-        &:hover {
-            color: black;
+        .dropdown-menu{
+            background-color: $bgColor-1;
+        }
+        &:hover{
             font-weight: bolder;
             text-decoration: underline;
         }
@@ -171,13 +173,14 @@ footer{
 .impresszium{
     background-color: $bgColor-4;
     font-size: smaller;
-    line-height: 2px;
+    line-height: 10px;
     a{
         color: black;
     }
     button{
         border: none;
         text-decoration: underline;
+        background-color: transparent;
     }
     .modal {
         .modal-content{
@@ -214,6 +217,9 @@ main{
         background-color: $bgColor-5 ;
         border: 3px solid rgb(146, 155, 156);
         text-align: justify;
+        @media screen and (min-width:992px) {
+            max-width: 980px;
+        }
       .container-fluid{
           figure{
               text-align: center;
@@ -221,6 +227,11 @@ main{
                 width: 70%;
                 border-radius: 5px;
             }
+          }
+      }
+      .customLine{
+          @media screen and (min-width: 768px) {
+              border-left: 3px solid rgb(146, 155, 156) ;
           }
       }
     }
@@ -434,5 +445,34 @@ main .section{
         right: 0;
         width: 100%;
         height: 100%;
+    }
+}
+
+/*registration*/
+form{
+    div{
+        padding: .8rem;
+        label{
+            font-weight: bolder;
+        }
+        input, select, textarea{
+            border: 1px solid black;
+            border-radius: 5px;
+            background-color: $bgColor-4;
+        }
+        #reset:hover{
+            background-color: lightgray;
+        }
+        .required{
+            color: darkred;
+            } 
+        }
+        p{
+            font-size: smaller;
+        }
+    @media screen and (min-width:768px) {
+        div {
+            padding: .8rem 5rem;
+        }
     }
 }

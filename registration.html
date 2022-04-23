@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="customStyle.css">
+    <title>´Bows Cafe</title>
+  </head>
+  <body>
+    <header>
+  <!--Navbar start-->
+    <nav class="navbar navbar-expand-md sticky-md-top">
+        <div class="container-fluid">
+            <a class="navbar-brand ps-2" href="index.html" aria-current="page">'Bows Cafe</a>
+            <button class="navbar-toggler  navbar-light" type="button" data-bs-toggle="collapse" data-bs-target="#navigatonBar" aria-controls="navigatonBar" aria-expanded="false" aria-label="Navigation Bar">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-md-end text-center pb-2" id="navigatonBar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                <a class="nav-link" href="about.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="bookarrivals.html">New Arrivals</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="menu.html">Menucard</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="events.html">Events</a>
+                </li>
+                <li class="nav-item pe-md-2">
+                <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+            </ul>
+            </div>
+        </div>
+      </nav>
+</header>
+
+<main class="d-flex flex-column justify-content-center align-items-center p-3 text-center customContainer">
+  <h2 class="pb-2">Registration form for our Events</h2>
+  <section class="container mx-5 my-2 p-3 p-sm-5">
+
+  <!--  FORM Data goes to trailhead account-->
+  <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" id="eventForm">
+  
+  <input type=hidden name="oid" value="00D7Q000006FNzJ">
+  <input type=hidden name="retURL" value="http://127.0.0.1:5500/FrontendExam/return.html">
+  
+  <!-- 
+    -->
+  <!--  ----------------------------------------------------------------------  --> 
+  <!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
+  <!--  these lines if you wish to test in debug mode.                          -->
+  <!--  <input type="hidden" name="debug" value=1>                              -->
+  <!--  <input type="hidden" name="debugEmail"                                  -->
+  <!--  value="viktoria.pajuste@gmail.com">                                     -->
+  <!--  ----------------------------------------------------------------------  -->
+  <div class="d-flex flex-column">
+      <label for="first_name">First Name <span class="required">*</span></label>
+      <input  id="first_name" maxlength="20" name="first_name" size="20" type="text" required />
+  </div>
+  <div class="d-flex flex-column">
+      <label for="last_name">Last Name <span class="required">*</span></label>
+      <input  id="last_name" maxlength="20" name="last_name" size="20" type="text" required />
+  </div>
+  <div class="d-flex flex-column">
+      <label for="email">Email <span class="required">*</span></label>
+      <input  id="email" maxlength="40" name="email" size="20" type="text" required />
+  </div>
+  <div class="d-flex flex-column">
+      <label for="phone">Phone</label>
+      <input  id="phone" maxlength="40" name="phone" size="20" type="text" />
+  </div>
+  <div class="d-flex flex-column">
+      <label for="00N7Q000008vquk">Event <span class="required">*</span></label>
+      <select  id="00N7Q000008vquk" name="00N7Q000008vquk" title="Event" required>
+            <option value=""></option>
+            <option value="Poker Night">Poker Night</option>
+            <option value="Familytree">Familytree</option>
+            <option value="Board Game Night">Board Game Night</option>
+            <option value="Drag Race Quiz">Drag Race Quiz</option>
+      </select>
+  </div>
+  <div class="d-flex flex-column">
+      <label for="00N7Q000008vs0O">Comment</label>
+      <textarea  id="00N7Q000008vs0O" name="00N7Q000008vs0O" type="text" wrap="soft"></textarea>
+  </div>
+  
+  <div class="d-flex justify-content-between">
+          <input class="btn btn-secondary" type="submit" name="submit">
+          <input class="btn btn border border-dark"  id="reset" type="reset" name="reset">
+  </div>
+  
+  <div>
+      <p>PLEASE NOTE! All data is going to be send to (creator of the page's) Salesforce Trailhead account. It is an online, free customer relationship management learning platform.</p>
+  </div>
+
+  </form>
+  </section> 
+
+
+
+</main>
+
+<footer class="d-md-flex text-center pb-2">
+  <div class="container pt-4">
+    <p>'Bow Cafe is locally owned bookstore and cafe in Aalborg specialized on distribution of new and used LGBT+ literature</p>
+  </div>
+  <div class="container pt-md-4 d-lg-flex justify-content-end me-lg-5">
+    <p class="m-0 pe-lg-3">Follow us</p>
+    <a href="https://www.facebook.com/Buensbogcafe" target="_blank"  role="img" aria-label="Our Facebook link"><i class="bi-facebook"></i></a>
+    <a href="https://www.instagram.com/buensbogcafe/" target="_blank"  role="img" aria-label="Our Instagram link"><i class="bi-instagram"></i></a>
+    <a href="https://www.tiktok.com/@buensbogcafe?" target="_blank"  role="img" aria-label="Our TikTok link"><i class="bi-tiktok"></i></a>
+    <a href="https://www.linkedin.com/company/buens-bogcaf%C3%A9/" target="_blank" role="img" aria-label="Our Twitter link"><i class="bi-linkedin"></i></a>
+  </div>
+</footer>
+
+<div id="toTop">
+    <a href="#" role="button" aria-label="To top of the page"><i class="bi bi-arrow-up-square-fill"></i></a>
+</div>
+    <!-- Optional JavaScript-->
+    <script>
+      let resetButton = document.getElementById("reset")
+      resetButton.addEventListener("click", function(){
+        document.getElementById("eventForm").reset();
+      })
+    </script>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>
