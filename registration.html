@@ -93,7 +93,7 @@
   </div>
   
   <div class="d-flex justify-content-between">
-          <input class="btn btn-secondary" type="submit" name="submit">
+          <input class="btn btn-secondary" type="submit" name="submit" id="submit">
           <input class="btn btn border border-dark"  id="reset" type="reset" name="reset">
   </div>
   
@@ -129,6 +129,10 @@
       let resetButton = document.getElementById("reset")
       resetButton.addEventListener("click", function(){
         document.getElementById("eventForm").reset();
+      })
+      let submitButton = document.getElementById("submit")
+      submitButton.addEventListener("click", function(){
+        alert("Thank you for your submission. Now you are going to be redirected to ProOktatas homepage.")
       })
     </script>
 
