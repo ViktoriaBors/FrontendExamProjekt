@@ -46,8 +46,7 @@ $textColor2: rgb(0, 26, 16);
     z-index:1;
     text-align: center;
     @media screen and (min-width:768px) {
-        width: 30vw;    
-        height: 15vh;  
+        height: 130px;  
     }
 }
 
@@ -265,6 +264,15 @@ main{
         position: relative;
         justify-self: center;
         align-self: center;
+        &:hover{
+            cursor: pointer;
+            transform: scale(0.8);
+        }
+        @media screen and (min-width:768px) {
+            &:hover{
+                transform: scale(1.2);
+            }
+        }
     }
     .bookTitle{
         font-size: 1rem;
@@ -288,7 +296,6 @@ main{
             text-align: justify;
             opacity: 0;
             transition: 0.3s ease-in-out;
-            cursor: pointer;
             @media screen and (min-width:576px) {
                 height: 300px;
                 

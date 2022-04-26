@@ -45,8 +45,7 @@
 
 @media screen and (min-width: 768px) {
   #modalCookies {
-    width: 30vw;
-    height: 15vh;
+    height: 130px;
   }
 }
 
@@ -312,6 +311,19 @@ main .container .container-fluid figure img {
       align-self: center;
 }
 
+.customGridOne .book:hover, .customGridTwo .book:hover {
+  cursor: pointer;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
+@media screen and (min-width: 768px) {
+  .customGridOne .book:hover, .customGridTwo .book:hover {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+}
+
 .customGridOne .bookTitle, .customGridTwo .bookTitle {
   font-size: 1rem;
   text-transform: uppercase;
@@ -341,7 +353,6 @@ main .container .container-fluid figure img {
   opacity: 0;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
-  cursor: pointer;
 }
 
 @media screen and (min-width: 576px) {
