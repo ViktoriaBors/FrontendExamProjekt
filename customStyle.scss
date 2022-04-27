@@ -55,6 +55,10 @@ $textColor2: rgb(0, 26, 16);
 /*header navbar and carousel*/
 header{
     background-color: $bgColor-1;
+    p:first-child{
+        color: $navColor;
+        font-size: 1.5rem;
+    }
 }
 .navbar{
     background-color: $bgColor-1;
@@ -65,7 +69,7 @@ header{
         -webkit-background-clip: text;
         color: transparent;
         letter-spacing: 5px;
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
     .navbar-brand:hover{
         color: $navColor;
@@ -75,6 +79,7 @@ header{
         font-size: 1.2rem;
         .active{
             font-weight: bolder;
+            font-size: 1.4rem;
         }
         .nav-link{
             color: $navColor;
@@ -83,8 +88,7 @@ header{
             background-color: $bgColor-1;
         }
         &:hover{
-            font-weight: bolder;
-            text-decoration: underline;
+            text-decoration: 2px underline;
         }
     }
 }
@@ -160,12 +164,12 @@ footer{
         padding: 0 0.5rem;
         color: $textColor2;
       &:hover{
-         color: black;
+         color: $bgColor-4;
         }
     }
     i:hover{
-        padding: 3px;
-        border: 1px solid $navColor;
+        border-bottom: 2px rgb(255, 239, 239) solid;
+        color: $bgColor-4;       
     }
 }
 
@@ -198,6 +202,7 @@ footer{
 /*index.html - parallax effect*/
 .parallax {
     background-image: url(img/cafe.png);
+    filter: grayscale(80%);
     min-height: 200px;
     background-attachment: fixed;
     background-position: 60% 20%;
@@ -267,6 +272,7 @@ main{
         align-self: center;
         &:hover{
             cursor: pointer;
+            transition: transform 1s;
             transform: scale(0.8);
         }
         @media screen and (min-width:768px) {

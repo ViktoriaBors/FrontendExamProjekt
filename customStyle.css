@@ -17,21 +17,23 @@
 /*header navbar and carousel*/
 header { background-color: #d3dedc; }
 
+header p:first-child { color: #01472d; font-size: 1.5rem; }
+
 .navbar { background-color: #d3dedc; }
 
-.navbar .navbar-brand { font-family: "Monoton", cursive; background-image: linear-gradient(to left, violet, indigo, blue, green, orange, red); background-clip: text; -webkit-background-clip: text; color: transparent; letter-spacing: 5px; font-size: 2rem; }
+.navbar .navbar-brand { font-family: "Monoton", cursive; background-image: linear-gradient(to left, violet, indigo, blue, green, orange, red); background-clip: text; -webkit-background-clip: text; color: transparent; letter-spacing: 5px; font-size: 1.5rem; }
 
 .navbar .navbar-brand:hover { color: #01472d; }
 
 .navbar .nav-item { font-size: 1.2rem; }
 
-.navbar .nav-item .active { font-weight: bolder; }
+.navbar .nav-item .active { font-weight: bolder; font-size: 1.4rem; }
 
 .navbar .nav-item .nav-link { color: #01472d; }
 
 .navbar .nav-item .dropdown-menu { background-color: #d3dedc; }
 
-.navbar .nav-item:hover { font-weight: bolder; text-decoration: underline; }
+.navbar .nav-item:hover { text-decoration: 2px underline; }
 
 .carousel { position: relative; }
 
@@ -54,9 +56,9 @@ footer { background-color: #7c99ac; color: #001a10; }
 
 footer a { padding: 0 0.5rem; color: #001a10; }
 
-footer a:hover { color: black; }
+footer a:hover { color: #ffefef; }
 
-footer i:hover { padding: 3px; border: 1px solid #01472d; }
+footer i:hover { border-bottom: 2px #ffefef solid; color: #ffefef; }
 
 /*Impresszium all*/
 .impresszium { background-color: #ffefef; font-size: smaller; line-height: 10px; }
@@ -70,7 +72,7 @@ footer i:hover { padding: 3px; border: 1px solid #01472d; }
 .impresszium .modal .modal-body p { line-height: normal; margin-bottom: .3rem; }
 
 /*index.html - parallax effect*/
-.parallax { background-image: url(img/cafe.png); min-height: 200px; background-attachment: fixed; background-position: 60% 20%; background-repeat: no-repeat; background-size: cover; color: white; text-shadow: 2px 3px black; display: flex; justify-content: center; align-items: center; border-radius: 5px; }
+.parallax { background-image: url(img/cafe.png); filter: grayscale(80%); min-height: 200px; background-attachment: fixed; background-position: 60% 20%; background-repeat: no-repeat; background-size: cover; color: white; text-shadow: 2px 3px black; display: flex; justify-content: center; align-items: center; border-radius: 5px; }
 
 /*about.html - main*/
 main .container { background-color: #a9b8c7; border: 3px solid #929b9c; text-align: justify; }
@@ -96,7 +98,7 @@ main .container .container-fluid figure img { width: 70%; border-radius: 5px; }
 
 .customGridOne .book, .customGridTwo .book { position: relative; justify-self: center; align-self: center; }
 
-.customGridOne .book:hover, .customGridTwo .book:hover { cursor: pointer; transform: scale(0.8); }
+.customGridOne .book:hover, .customGridTwo .book:hover { cursor: pointer; transition: transform 1s; transform: scale(0.8); }
 
 @media screen and (min-width: 768px) { .customGridOne .book:hover, .customGridTwo .book:hover { transform: scale(1.2); } }
 
