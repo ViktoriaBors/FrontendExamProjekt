@@ -28,7 +28,7 @@ To use all (and more) of the knowledge what I have learned during the course, in
 1. Pagination - DOM manipulation was a hard part of this project in the booklist. Why? Probably because my JavaScript knowledge was not enough, but I did not give up and tried my best to make it work.
 2. Webaccessibility - Reaching all the feature just with keyboard was challenging f.e. at the menucard animation
 
-### **_What have I learned with?_**
+### **_What have I learned?_**
 
 I learned to make a static website from scratch. I gained experience working with Bootstrap and SASS. I have put all my JavaScript knowledge what I had that time.
 
